@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // pattern - 1
+      let pattern1 = "";
+      for (let i = 1; i <= 5; i++) {
+        if (i == 1 || i == 5) {
+          for (let y = 1; y <= 5; y++) {
+            pattern1 += "*";
+          }
+        } else {
+          for (let y = 1; y <= 5; y++) {
+            if (y == 1 || y == 5) {
+              pattern1 += "*";
+            } else {
+              pattern1 += " ";
+            }
+          }
+        }
+        pattern1 += "\n";
+      }
+      console.log(pattern1);
+      // *****
+      // *   *
+      // *   *
+      // *   *
+      // *****
+      //   Output - 1
+      
+      // patter-2
+      
+      let patter2 = "";
+      for (let i = 1; i <= 5; i++) {
+        for (let y = 5; y >= i; y--) {
+          patter2 += "*";
+        }
+        patter2 += "\n";
+      }
+      console.log(patter2);
+      
+      //   patter-3
+      
+      let pattern3 = "";
+      let pattern3_x = 4;
+      let pattern3_y = 5;
+      for (let i = 1; i <= 9; i++) {
+        for (let y = 1; y <= 9; y++) {
+          if (y <= pattern3_x || y > pattern3_y) {
+            pattern3 += " ";
+          } else {
+            pattern3 += "*";
+          }
+        }
+        
+        pattern3 += "\n";
+        if (i < 5) {
+          pattern3_x -= 1;
+          pattern3_y += 1;
+        } else {
+          pattern3_y -= 1;
+          pattern3_x += 1;
+        }
+      }
+      console.log(pattern3);
+      
+      
+      //   pattern - 4
+      
+      let pattern4 = "";
+      let pattern4_x = 0;
+      let pattern4_y = 9;
+      for (let i = 1; i <= 9; i++) {
+        for (let y = 1; y <= 9; y++) {
+          if (y <= pattern4_x || y > pattern4_y) {
+            pattern4 += " ";
+          } else {
+            pattern4 += "*";
+          }
+        }
+        
+        pattern4 += "\n";
+        if (i < 5) {
+          pattern4_x += 1;
+          pattern4_y -= 1;
+        } else {
+          pattern4_y += 1;
+          pattern4_x -= 1;
+        }
+      }
+      console.log(pattern4);
+      
+      //   pattern - 5
+      
+      let pattern5 = "";
+      let pattern5_x = 4;
+      for(let i = 1 ; i <= 9 ; i++){
+        for(let y = 1 ; y <= 5 ; y++){
+          if( y > pattern5_x){
+            pattern5 += "*"
+          }else{
+            pattern5 += " "
+          }
+        }
+        if( i < 5 ){
+          pattern5_x -= 1
+          
+        }else{
+          pattern5_x += 1
+        }
+        pattern5 +="\n"
+      }
+      console.log(pattern5);
+      </script>
+  </body>
+  </html>
+  

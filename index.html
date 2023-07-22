@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div style="text-align : center;">
+    <form onsubmit="addToCart()" >
+      <select id="cartItems">
+        <option value="Mouse">Mouse (300)</option>
+        <option value="Keyboard">Keyboard (500)</option>
+        <option value="Desktop">Desktop (5k)</option>
+        <option value="Laptop">Laptop (50k)</option>
+        <option value="CPU">CPU (40k)</option></select><br />
+      <input type="number" id="itemQuantity" value="1" min="1"/><br />
+      <button >Add to cart</button>
+    </form>
+    <textarea id="cartShow" rows="15" cols="50" readonly="true"></textarea>
+    <script src="./index.js" ></script>
+
+    <form onsubmit="conditionApply()" id="custInfoForm">
+        <h1>Customer Information</h1>
+        <label>Name : </label><input id="name" type="text" required/><br/>
+        <label>Email : </label><input id="mail" type="text" required/><br/>
+        <label>Address : </label><input id="address" type="text" required/><br/>
+        <label>Mobile Number : </label><input id="mobNumber" type="tel" required/><br/>
+        <button>Place Order</button><br/>
+        <textarea id="custInfoShow" rows="10" cols="40" readonly="true"></textarea>
+    </form>
+    <p id="allCustdata"></p><hr>
+    <button onclick="firstbtn()">First</button><hr>
+    <button onclick="nextbtn()">Next</button><hr>
+    <button onclick="previousbtn()">Previous</button><hr>
+    <button onclick="lastbtn()">Last</button><br/><hr>
+    <input type="number" id="gotoValue" value="1" min="1"/>
+    <button onclick="gotoOrder()">Go to</button>
+  </div>
+    <script src="./customerForm.js"></script>
+  </body>
+</html>

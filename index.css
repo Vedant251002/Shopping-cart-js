@@ -1,0 +1,111 @@
+/* Center align the content inside the <div> */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the form */
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Style the <select> element */
+  select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Style the <button> element */
+  button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the <textarea> element */
+  textarea {
+    margin-top: 10px;
+    resize: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Style the customer information form */
+  #custInfoForm {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  /* Style the <h1> element inside the customer information form */
+  #custInfoForm h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the <label> elements inside the customer information form */
+  #custInfoForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Style the <input> elements inside the customer information form */
+  #custInfoForm input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    width: 250px;
+  }
+  
+  /* Style the place order button */
+  #custInfoForm button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #custInfoForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the pagination buttons */
+  button:last-child {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the <input> element for go to value */
+  input[type="number"] {
+    width: 50px;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+  }
+  
